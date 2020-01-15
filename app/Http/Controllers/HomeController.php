@@ -8,6 +8,7 @@ class HomeController extends Controller
 {
     /**
      * Create a new controller instance.
+     * aqui este midleware se antepone verificando si un usiario ya ha sido autenticado  "auth"
      *
      * @return void
      */

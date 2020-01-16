@@ -92,7 +92,7 @@
       <div class="section section-contacts">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
-            <h2 class="text-center title">¿Aún no te has registrado?</h2>
+            <h2 class="text-center title">¿Aún no te has registrado bb?</h2>
             <h4 class="text-center description">Registrate ingresando tus datos basicos y podrás realizar tus pedisos atraves de nuestro carrito de compras. Si aun no te decides, de todas formas, con tu cuenta de usuario podrás hacer todas tus consultas sin compromiso</h4>
             <form class="contact-form">
               <div class="row">

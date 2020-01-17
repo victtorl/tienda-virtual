@@ -13,7 +13,7 @@
 
         <div class="section ">
             <h2 class="title text-center">Editar producto seleccionado</h2>
-            <form method="post" action="{{url('/admin/products/'.$product->id.'/edit)}}">
+            <form method="post" action="{{url('/admin/products/'.$product->id.'/edit')}}">
                 @csrf
                 <div class="row">
                     <div class="col-sm-6">
@@ -25,7 +25,7 @@
                     <div class="col-sm-6">
                         <div class="form-group label-floating">
                             <label class="control-label">Precio del producto</label>
-                            <input type="number" class="form-control" name="price" value="{{$product->price}}">
+                            <input type="number" step="0.01" class="form-control" name="price" value="{{$product->price}}">
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                     name="long_description">"{{$product->long_description}}"</textarea>
 
                 <button class="btn btn-primary">Guardar Cambios </button>    
-                <!-- <a href="{{url('/admin/products')}}" class="btn btn-default">Cancelar</a> -->
+                <a href="{{url('/admin/products') }}" class="btn btn-default">Cancelar</a>
             </form>
         </div>
 

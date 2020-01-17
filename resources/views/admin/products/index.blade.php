@@ -46,10 +46,15 @@
                                         title="Editar producto" class="btn btn btn-link btn-simple btn-xs">
                                         <i class="fa fa-edit"></i>
                                     </a>
-                                    <button type="button" rel="tooltip" title="Eliminar producto"
-                                        class="btn btn btn-link  btn-simple btn-xs">
-                                        <i class="fa fa-times"></i>
-                                    </button>
+
+                                    <form method="post" action="{{url('/admin/products/'.$product->id)}}">
+                                    @csrf
+                                    {{method_field('DELETE')}}
+                                    <button type="submit" rel="tooltip" title="Eliminar producto"
+                                            class="btn btn btn-link  btn-simple btn-xs">
+                                            <i class="fa fa-times"></i>
+                                        </button>
+                                    </form>
                                 </td>
                             </tr>
                             @endforeach

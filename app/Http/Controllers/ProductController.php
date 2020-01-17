@@ -32,7 +32,7 @@ class ProductController extends Controller
     }
     public function edit($id){
 
-        //return "mostrar aqui el form de edicion para el producto con id $id";  //formulario de registro
+        // return "mostrar aqui el form de edicion para el producto con id $id";  //formulario de registro
         $product = Product::find($id);
         return view('admin.products.edit')->with(compact('product'));
     }

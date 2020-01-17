@@ -10,7 +10,7 @@
 </div>
 <div class="main main-raised">
     <div class="container">
-//edit arreglado solo se trataba de una puta comilla
+
         <div class="section ">
             <h2 class="title text-center">Editar producto seleccionado</h2>
             <form method="post" action="{{url('/admin/products/'.$product->id.'/edit')}}">
@@ -25,7 +25,7 @@
                     <div class="col-sm-6">
                         <div class="form-group label-floating">
                             <label class="control-label">Precio del producto</label>
-                            <input type="number" class="form-control" name="price" value="{{$product->price}}">
+                            <input type="number" step="0.01" class="form-control" name="price" value="{{$product->price}}">
                         </div>
                     </div>
                 </div>

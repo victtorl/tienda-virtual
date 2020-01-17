@@ -24,3 +24,6 @@ Route::get('/admin/products/create','ProductController@create'); //formulario
 Route::post('/admin/products', 'ProductController@store'); //registrar
 Route::get('/admin/products/{id}/edit','ProductController@edit'); //formulario edicion           
 Route::post('/admin/products/{id}/edit', 'ProductController@update'); //actualizar
+Route::delete('/admin/products/{id}', 'ProductController@destroy'); //eliminar
+
+//put patch delete 
